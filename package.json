@@ -1,0 +1,34 @@
+{
+  "name": "sticky-img",
+  "version": "1.0.0",
+  "description": "Always-on-top clipboard image viewer",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win portable"
+  },
+  "build": {
+    "appId": "com.stickyimg.app",
+    "productName": "stickyIMG",
+    "win": {
+      "target": "portable",
+      "icon": "icon.ico"
+    },
+    "portable": {
+      "artifactName": "stickyIMG.exe"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "index.html",
+      "style.css",
+      "renderer.js",
+      "icon.png",
+      "icon-16.png"
+    ]
+  },
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8"
+  }
+}

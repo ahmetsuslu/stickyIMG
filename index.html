@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'">
+  <title>stickyIMG</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="titlebar">
+    <span class="title">stickyIMG</span>
+    <div class="titlebar-buttons">
+      <button id="btnPin" class="pin-active" title="Sabitle / Kaldir">&#x1F4CC;</button>
+      <button id="btnMinimize" title="Kucult">&#x2500;</button>
+      <button id="btnClose" title="Kapat">&#x2715;</button>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="image-container" id="imageContainer">
+      <div class="placeholder" id="placeholder">
+        <div class="placeholder-icon">&#x1F4CB;</div>
+      </div>
+      <img id="pastedImage" alt="Pasted screenshot">
+    </div>
+  </div>
+
+  <script defer src="renderer.js"></script>
+</body>
+</html>
